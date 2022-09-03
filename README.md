@@ -10,7 +10,8 @@
 - Navigate to `C:\<your server>\website\template\kaelthas\tpl`
 - Open any of the php files to edit them.
 
-# Changelog
+## [CHANGELOG.MD](https://github.com/etcroot/kaelthas-improved/blob/main/CHANGELOG.md)
+Click the title to read the changelogs.
 
 # Previews
 ![Home Page](https://i.imgur.com/rxx1nDM.png)
