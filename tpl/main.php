@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by Amin.MasterkinG
  * Website : MasterkinG32.CoM
@@ -18,8 +19,7 @@ require_once 'header.php'; ?>
                     <li><a data-toggle="tab" href="#pills-contact" id="contact">Contact us</a></li>
                 </ul>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade in <?php echo((empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>"
-                         id="pills-main">
+                    <div class="tab-pane fade in <?php echo ((empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>" id="pills-main">
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -30,29 +30,26 @@ require_once 'header.php'; ?>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg"
-                                         alt="Los Angeles" style="width:100%;">
+                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg" alt="Los Angeles" style="width:100%;">
                                 </div>
                                 <div class="item">
-                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg"
-                                         alt="Chicago" style="width:100%;">
+                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg" alt="Chicago" style="width:100%;">
                                 </div>
                                 <div class="item">
-                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg"
-                                         alt="New york" style="width:100%;">
+                                    <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg" alt="New york" style="width:100%;">
                                 </div>
                             </div>
                         </div>
                         <?php require_once base_path . 'template/' . $antiXss->xss_clean(get_config("template")) . '/tpl/posts.php'; ?>
                     </div>
-                    <div class="tab-pane fade in <?php echo(!(empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>"
-                         id="pills-register">
+                    <div class="tab-pane fade in <?php echo (!(empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>" id="pills-register">
                         <div class="row">
                             <div class="col-md-6">
                                 <form action="" method="post">
                                     <div class="box1" style="margin-top: 10px;padding: 10px;">
                                         <?php error_msg();
-                                        success_msg(); //Display message. ?>
+                                        success_msg(); //Display message. 
+                                        ?>
                                         <div class="input-group">
                                             <span class="input-group">
                                                 <label>Email</label>
@@ -64,26 +61,21 @@ require_once 'header.php'; ?>
                                                 <span class="input-group">
                                                     <label>Username</label>
                                                 </span>
-                                                <input type="text" class="form-control" placeholder="Username"
-                                                       name="username">
-                                            </div> 
+                                                <input type="text" class="form-control" placeholder="Username" name="username">
+                                            </div>
                                         <?php } ?>
                                         <div class="input-group">
                                             <span class="input-group">
                                                 <label>Password</label></span>
-                                            <input type="password" class="form-control" placeholder="Password"
-                                                   name="password">
+                                            <input type="password" class="form-control" placeholder="Password" name="password">
                                         </div>
                                         <div class="input-group">
                                             <span class="input-group">
                                                 <label>Re-Enter Password</label></span>
-                                            <input type="password" class="form-control" placeholder="Re-Password"
-                                                   name="repassword">
+                                            <input type="password" class="form-control" placeholder="Re-Password" name="repassword">
                                         </div>
                                         <input name="submit" type="hidden" value="register">
-                                        <div class="text-center" style="margin-top: 10px;"><input type="submit"
-                                                                                                  class="btn btn-success"
-                                                                                                  value="Register">
+                                        <div class="text-center" style="margin-top: 10px;"><input type="submit" class="btn btn-success" value="Register">
                                         </div>
                                     </div>
                                 </form>
@@ -93,12 +85,10 @@ require_once 'header.php'; ?>
                                     <?php require_once base_path . 'template/' . $antiXss->xss_clean(get_config("template")) . '/tpl/rules.php'; ?>
                                     <hr>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#changepassword-modal">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changepassword-modal">
                                             Change Password
                                         </button>
-                                        <button type="button" class="btn btn-info" data-toggle="modal"
-                                                data-target="#restorepassword-modal">
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#restorepassword-modal">
                                             Restore Password
                                         </button>
                                     </div>
@@ -114,14 +104,10 @@ require_once 'header.php'; ?>
                                                     <form action="" method="post">
                                                         <div class="input-group">
                                                             <span class="input-group">Email</span>
-                                                            <input type="email" class="form-control" placeholder="Email"
-                                                                   name="email">
+                                                            <input type="email" class="form-control" placeholder="Email" name="email">
                                                         </div>
                                                         <input name="submit" type="hidden" value="restorepassword">
-                                                        <div class="text-center" style="margin-top: 10px;"><input
-                                                                    type="submit"
-                                                                    class="btn btn-primary"
-                                                                    value="Change Password"></div>
+                                                        <div class="text-center" style="margin-top: 10px;"><input type="submit" class="btn btn-primary" value="Change Password"></div>
 
                                                     </form>
                                                 </div>
@@ -145,37 +131,26 @@ require_once 'header.php'; ?>
                                                     <form action="" method="post">
                                                         <div class="input-group">
                                                             <span class="input-group">Email</span>
-                                                            <input type="email" class="form-control" placeholder="Email"
-                                                                   name="email">
+                                                            <input type="email" class="form-control" placeholder="Email" name="email">
                                                         </div>
                                                         <div class="input-group">
                                                             <span class="input-group">Old Password</span>
-                                                            <input type="password" class="form-control"
-                                                                   placeholder="Old Password"
-                                                                   name="old_password">
+                                                            <input type="password" class="form-control" placeholder="Old Password" name="old_password">
                                                         </div>
                                                         <div class="input-group">
                                                             <span class="input-group">Password</span>
-                                                            <input type="password" class="form-control"
-                                                                   placeholder="Password"
-                                                                   name="password">
+                                                            <input type="password" class="form-control" placeholder="Password" name="password">
                                                         </div>
                                                         <div class="input-group">
                                                             <span class="input-group">Re-Password</span>
-                                                            <input type="password" class="form-control"
-                                                                   placeholder="Re-Password"
-                                                                   name="repassword">
+                                                            <input type="password" class="form-control" placeholder="Re-Password" name="repassword">
                                                         </div>
                                                         <input name="submit" type="hidden" value="changepass">
-                                                        <div class="text-center" style="margin-top: 10px;"><input
-                                                                    type="submit"
-                                                                    class="btn btn-primary"
-                                                                    value="Change Password"></div>
+                                                        <div class="text-center" style="margin-top: 10px;"><input type="submit" class="btn btn-primary" value="Change Password"></div>
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-danger"
-                                                            data-dismiss="modal">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">
                                                         Close
                                                     </button>
                                                 </div>
@@ -239,25 +214,25 @@ require_once 'header.php'; ?>
                                 echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
                                 $i++;
 
-//                                    $data2show = status::get_top_achievements($onerealm['realmid']);
-//                                    echo "<button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#modal-id$i\">Play Achievements</button><div class=\"modal\" id=\"modal-id$i\"><div class=\"modal-dialog modal-lg\"><div class=\"modal-content\">
-//                                            <div class=\"modal-header\"><h4 class=\"modal-title\">TOP PLAYERS - Achievements</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\">";
-//                                    if (!is_array($data2show)) {
-//                                        echo "<span style='color: #0d99e5;'>There's nothing to display, go grind some more!</span>";
-//                                    } else {
-//                                        echo '<table class="table table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Name</th><th scope="col">Race</th> <th scope="col">Class</th><th scope="col">Level</th><th scope="col">Achievements</th></tr></thead><tbody>';
-//                                        $m = 1;
-//                                        foreach ($data2show as $one_char) {
-//                                            $character_data = status::get_character_by_guid($onerealm['realmid'], $one_char['guid']);
-//                                            if (empty($character_data['name'])) {
-//                                                continue;
-//                                            }
-//                                            echo '<tr><td>' . $m++ . '<th scope="row">' . $antiXss->xss_clean($character_data['name']) . '</th><td><img src=\'' . get_config("baseurl") . '/template/' . $antiXss->xss_clean(get_config("template")) . '/images/race/' . $antiXss->xss_clean($character_data["race"]) . '-' . $antiXss->xss_clean($character_data["gender"]) . '.gif\'></td><td><img src=\'' . get_config("baseurl") . '/template/' . $antiXss->xss_clean(get_config("template")) . '/images/class/' . $antiXss->xss_clean($character_data["class"]) . '.gif\'></td><td>' . $antiXss->xss_clean($character_data['level']) . '</td><td>' . $antiXss->xss_clean($one_char['total']) . '</td></tr>';
-//                                        }
-//                                        echo '</table>';
-//                                    }
-//                                    echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
-//                                    $i++;
+                                //                                    $data2show = status::get_top_achievements($onerealm['realmid']);
+                                //                                    echo "<button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#modal-id$i\">Play Achievements</button><div class=\"modal\" id=\"modal-id$i\"><div class=\"modal-dialog modal-lg\"><div class=\"modal-content\">
+                                //                                            <div class=\"modal-header\"><h4 class=\"modal-title\">TOP PLAYERS - Achievements</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\">";
+                                //                                    if (!is_array($data2show)) {
+                                //                                        echo "<span style='color: #0d99e5;'>There's nothing to display, go grind some more!</span>";
+                                //                                    } else {
+                                //                                        echo '<table class="table table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Name</th><th scope="col">Race</th> <th scope="col">Class</th><th scope="col">Level</th><th scope="col">Achievements</th></tr></thead><tbody>';
+                                //                                        $m = 1;
+                                //                                        foreach ($data2show as $one_char) {
+                                //                                            $character_data = status::get_character_by_guid($onerealm['realmid'], $one_char['guid']);
+                                //                                            if (empty($character_data['name'])) {
+                                //                                                continue;
+                                //                                            }
+                                //                                            echo '<tr><td>' . $m++ . '<th scope="row">' . $antiXss->xss_clean($character_data['name']) . '</th><td><img src=\'' . get_config("baseurl") . '/template/' . $antiXss->xss_clean(get_config("template")) . '/images/race/' . $antiXss->xss_clean($character_data["race"]) . '-' . $antiXss->xss_clean($character_data["gender"]) . '.gif\'></td><td><img src=\'' . get_config("baseurl") . '/template/' . $antiXss->xss_clean(get_config("template")) . '/images/class/' . $antiXss->xss_clean($character_data["class"]) . '.gif\'></td><td>' . $antiXss->xss_clean($character_data['level']) . '</td><td>' . $antiXss->xss_clean($one_char['total']) . '</td></tr>';
+                                //                                        }
+                                //                                        echo '</table>';
+                                //                                    }
+                                //                                    echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
+                                //                                    $i++;
 
                                 $data2show = status::get_top_killers($onerealm['realmid']);
                                 echo "<button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#modal-id$i\">Killers</button><div class=\"modal\" id=\"modal-id$i\"><div class=\"modal-dialog modal-lg\"><div class=\"modal-content\">
@@ -324,22 +299,22 @@ require_once 'header.php'; ?>
                                 echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
                                 $i++;
 
-//                                    $data2show = status::get_top_guild_by_member($onerealm['realmid']);
-//                                    echo "<button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#modal-id$i\">Guilds by member count</button><div class=\"modal\" id=\"modal-id$i\"><div class=\"modal-dialog modal-lg\"><div class=\"modal-content\">
-//                                            <div class=\"modal-header\"><h4 class=\"modal-title\">TOP PLAYERS - Guilds by member count</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\">";
-//                                    if (!is_array($data2show)) {
-//                                        echo "<span style='color: #0d99e5;'>Don't have anything for display.</span>";
-//                                    } else {
-//                                        echo '<table class="table table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Name</th><th scope="col">Guild Leader</th></tr></thead><tbody>';
-//                                        $m = 1;
-//                                        foreach ($data2show as $one_char) {
-//                                            $character_data = status::get_character_by_guid($onerealm['realmid'], $one_char['leaderguid']);
-//                                            echo '<tr><td>' . $m++ . '<th scope="row">' . $antiXss->xss_clean($one_char['name']) . '</th><td>' . (!empty($character_data["name"]) ? $antiXss->xss_clean($character_data['name']) : '-') . '</td></tr>';
-//                                        }
-//                                        echo '</table>';
-//                                    }
-//                                    echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
-//                                    $i++;
+                                //                                    $data2show = status::get_top_guild_by_member($onerealm['realmid']);
+                                //                                    echo "<button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#modal-id$i\">Guilds by member count</button><div class=\"modal\" id=\"modal-id$i\"><div class=\"modal-dialog modal-lg\"><div class=\"modal-content\">
+                                //                                            <div class=\"modal-header\"><h4 class=\"modal-title\">TOP PLAYERS - Guilds by member count</h4><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\">";
+                                //                                    if (!is_array($data2show)) {
+                                //                                        echo "<span style='color: #0d99e5;'>Don't have anything for display.</span>";
+                                //                                    } else {
+                                //                                        echo '<table class="table table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Name</th><th scope="col">Guild Leader</th></tr></thead><tbody>';
+                                //                                        $m = 1;
+                                //                                        foreach ($data2show as $one_char) {
+                                //                                            $character_data = status::get_character_by_guid($onerealm['realmid'], $one_char['leaderguid']);
+                                //                                            echo '<tr><td>' . $m++ . '<th scope="row">' . $antiXss->xss_clean($one_char['name']) . '</th><td>' . (!empty($character_data["name"]) ? $antiXss->xss_clean($character_data['name']) : '-') . '</td></tr>';
+                                //                                        }
+                                //                                        echo '</table>';
+                                //                                    }
+                                //                                    echo "</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Close</button></div></div></div></div>";
+                                //                                    $i++;
 
                                 echo "<hr>";
                             }
@@ -357,19 +332,18 @@ require_once 'header.php'; ?>
         <div class="col-md-4 sidebar">
             <div class="box1">
                 <h3 class="box-title">SERVER INFO</h3>
-                    <hr class="divider">
-                    <div class="box-content">
-                        <p>Server address: <span style="color: yellow;"><?php echo get_config('realmlist'); ?></span></p>
-                        <?php echo(!empty(get_config("game_version")) ? '<p>Version : <span style="color: yellow;">' . get_config("game_version") . '</span></p>' : ''); ?>
-                    </div>
-                </div>
-            <div class="box1">
-            <h3 class="box-title">Discord</h3>
                 <hr class="divider">
-                    <div class="box-content">
-                <iframe src="https://discordapp.com/widget?id=291115666097045506&theme=dark" width="auto"
-                        height="450" allowtransparency="true" frameborder="0"></iframe>
-                    </div>
+                <div class="box-content">
+                    <p>Server address: <span style="color: yellow;"><?php echo get_config('realmlist'); ?></span></p>
+                    <?php echo (!empty(get_config("game_version")) ? '<p>Version : <span style="color: yellow;">' . get_config("game_version") . '</span></p>' : ''); ?>
+                </div>
+            </div>
+            <div class="box1">
+                <h3 class="box-title">Discord</h3>
+                <hr class="divider">
+                <div class="box-content">
+                    <iframe src="https://discordapp.com/widget?id=291115666097045506&theme=dark" width="auto" height="450" allowtransparency="true" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
     </div>

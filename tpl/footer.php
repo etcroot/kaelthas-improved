@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Amin Mahmoudi (MasterkinG)
  * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
@@ -16,4 +17,5 @@ use SebastianBergmann\Timer\Timer;
 </div>
 </div>
 </body>
+
 </html>

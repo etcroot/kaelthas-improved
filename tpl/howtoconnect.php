@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by Amin.MasterkinG
  * Website : MasterkinG32.CoM
@@ -17,6 +18,7 @@
         you've found it, open up the directory called "data", then go into the directory called either enUS or enGB,
         depending on your client language.</p>
     <p>5. Erase all text and change it to:<br />
-    <code>set portal "<?php echo get_config('realmlist'); ?>"</code></p>
+        <code>set portal "<?php echo get_config('realmlist'); ?>"</code>
+    </p>
     <p>You may now start playing! If you need any help, do not hesitate to create a support ticket.</p>
 </div>
