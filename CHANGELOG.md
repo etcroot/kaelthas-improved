@@ -1,3 +1,6 @@
+### 2022/09/03 - v1.0.2
+- Another typo has been fixed in main.php.
+
 ### 2022/09/03 - v1.0.1
 - Fixed a typo from the original author on the Currently Online Players page.
 
