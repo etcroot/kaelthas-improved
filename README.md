@@ -20,3 +20,7 @@
 
 ### Credits
 Original Author: [masterking32](https://masterking32.com)
+
+# Previews
+![Home Page](https://i.imgur.com/rxx1nDM.png)
+![Registration Page](https://i.imgur.com/jxq3tuA.png)
