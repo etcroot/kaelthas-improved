@@ -7,6 +7,14 @@
  */
 ?>
 <div class="box1" style="margin-top: 10px;">
+    <h3 class="box-title">Template improvement by etcroot</h3>
+    <hr class="divider">
+    <div class="box-content">
+        <p>You can read more about the template improvement at the <a href="https://github.com/etcroot/kaelthas-improved" target="_blank">Github Page</a>
+        <p>Here's the changelog: <a href="https://github.com/etcroot/kaelthas-improved/blob/main/CHANGELOG.md" target="_blank">Changelogs</a></p>
+    </div>
+</div>
+<div class="box1" style="margin-top: 10px;">
     <h3 class="box-title">Welcome to Single Player Project - LegionV2 server!</h3>
     <hr class="divider">
     <div class="box-content">
@@ -22,3 +30,4 @@
         </p>
     </div>
 </div>
+
