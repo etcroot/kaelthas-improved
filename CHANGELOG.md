@@ -1,3 +1,6 @@
+### 2022/09/03 - v1.0.4
+- Added a post entry with the improvement information.
+
 ### 2022/09/03 - v1.0.3
 - Website font can now be changed through a variable, if you wish to change the font linked it's top of the style.css file.
 You can find more fonts at: [Google Fonts](https://fonts.google.com/)
