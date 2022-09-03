@@ -8,6 +8,7 @@
 :root {
     --gradient-bg: rgba(0,0,0,.888), rgba(0,0,0,.999);
     --bg-image: url(../images/wallpaper.png);
+    --site-font: 'Barlow', sans-serif;
     --bg-color: rgb(20, 20, 26);
     --almost-white: #cfcfcf;
     --color-white: #fff;
@@ -28,7 +29,7 @@
 html, body {
     min-height: 100vh;
     min-width: 100vw;
-    font-family: 'Barlow', sans-serif !important;
+    font-family: var(--site-font) !important;
     display: flex;
     flex-direction: column;
     gap: 20;
