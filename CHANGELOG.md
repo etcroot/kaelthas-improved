@@ -1,3 +1,6 @@
+### 2022/09/03 - v1.0.5
+- Formatted documents for easier readability.
+
 ### 2022/09/03 - v1.0.4
 - Added a post entry with the improvement information.
 
